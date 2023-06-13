@@ -9,6 +9,6 @@ public class Produto {
 	
 	//public: modificador de acesso livre para todas as classes
 	//private: Modificador de acesso restrito apenas membros 
-	//da própia classe, Entende-se por "membros" (atributos e/ou metodos)
+	//da própia classe, Entende-se por "membros" (atributos e/ou metodos).
 
 }
