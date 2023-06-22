@@ -6,6 +6,7 @@ public class Produto {
 	private String nome;
 	private String codigoBarras;
 	private double preco;
+	public long setId;
 	
 	//public: modificador de acesso livre para todas as classes
 	//private: Modificador de acesso restrito apenas membros 
@@ -22,7 +23,7 @@ public class Produto {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 
-}
+    }
 	public String getDescricao() {
 		return descricao;
 	}
@@ -51,4 +52,6 @@ public class Produto {
 	 public double getPreco() {
 		 return preco;
 	 }
-}
+	 
+	 
+}	 

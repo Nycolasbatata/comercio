@@ -1,6 +1,7 @@
 package com.itb.inf2dm.comercio.controller;
 
 import java.util.List;
+import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +16,7 @@ public class LojaController {
 	
 	@GetMapping("/listar")
 	public String listarProdutos() {
-		return "produtos";
+		
 		
 		Produto p1 = new Produto();
 		p1.setId = (20l);
@@ -23,7 +24,8 @@ public class LojaController {
 		p1.setCodigoBarras("JHDYEJOUSNEU25411");
 		p1.setPreco(3654.12);
 		
-	listaDeProdutos.add(p1);	 	
+	listaDeProdutos.add(p1);
+	return "produtos";
 	}
 	@GetMapping("/novo-prod")
 	public String novoProduto() {
