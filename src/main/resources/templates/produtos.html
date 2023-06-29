@@ -21,9 +21,11 @@
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Descricao</th>
                         <th>Nome</th>
                         <th>Código de Barras</th>
                         <th>Preço</th>
+                        <th>CodStatus</th>
                         <th>Editar</th>
                     </tr>
                 </thead>   
@@ -33,10 +35,10 @@
                         <td th:text="${produto.descricao}"></td>
                         <td th:text="${produto.nome}"></td>
                         <td th:text="${produto.codigoBarras}"></td>
-                        <td th:text="${produto.preco}"></td>
-                        <td th:text="${produto.status}"></td>
+                        <td th:text="${#numbers.formatCurrency(produto.preco)}"></td>
+                        <td th:text="${produto.status} ? 'Ativo' : 'Inativo' "></td>
                         <td>
-                        <a href="#" class="btn btn-primary">
+                        <a href="#" class="btn btn-primary"> Editar
                             <i class="fas fa-edit ml-2"></i>
                             </a>
                         </td>

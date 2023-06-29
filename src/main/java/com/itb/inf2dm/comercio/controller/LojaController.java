@@ -21,11 +21,24 @@ public class LojaController {
 		
 		Produto p1 = new Produto();
 		p1.setId = (20l);
-		p1.setNome("Máquina de lavar Bastemp 12 litros");
-		p1.setCodigoBarras("JHDYEJOUSNEU25411");
+		p1.setNome("rtx 3060");
+		p1.setCodigoBarras("JHDYEJOUSNEU5411");
 		p1.setPreco(3654.12);
+		p1.setDescricao("COMPUTADOR TERABYTE");
+		p1.setStatus(true);
 		
-	listaDeProdutos.add(p1);
+		listaDeProdutos.add(p1);
+		
+		
+		Produto p2 = new Produto();
+		p2.setId = (21l);
+		p2.setNome("rx 6750 xt");
+		p2.setCodigoBarras("JHDYEJOUSNEU25411");
+		p2.setPreco(3654.12);
+		p2.setDescricao("COMPUTADOR PICHAU GAMER");
+		p2.setStatus(false);
+		
+	    listaDeProdutos.add(p2);
 	
     model.addAttribute("listaDeProdutos", listaDeProdutos);
 	
