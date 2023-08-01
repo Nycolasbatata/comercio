@@ -8,7 +8,7 @@ public class ComercioApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ComercioApplication.class, args);
-		System.out.println("delicia delicia assim vc me mata");
+		System.out.println("HELLOW WORD");
 	}
 
 }
